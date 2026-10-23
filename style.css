@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cover {
+    background-color: cornflowerblue;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px; */
+}
+.calculator {
+    width: 90%;
+    max-width: 420px;
+    height: 90%;
+    padding: 18px 8px 8px 8px;
+    background: #1e1e2f;
+    box-shadow: 0px 0px 20px 4px rgba(108, 92, 231, 0.5);
+    border-radius: 32px;
+    box-sizing: border-box;
+    display: flex;
+    align-self: center;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 16px;
+    width: 100%;
+    max-height: fit-content;
+}
+
+
+.ask-ques {
+    margin: 4px 8px 16px 8px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.type {
+    font-size: 28px;
+    padding: 18px 24px;
+    width: 100%;
+    background-color: gray;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    direction: ltr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    border: 2px solid rgb(10, 10, 10);
+}
+
+.input {
+    background-color: rgb(3, 3, 3);
+    border: 2px solid rgb(5, 5, 5);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    border-radius: 16px;
+    margin-top: 20px;
+    padding: 22px;
+}
+
+.numbers,
+.operators {
+    display: flex;
+    justify-content: center;
+
+    border-radius: 999px;
+    border: 1px solid rgb(238, 231, 231);
+
+    background: transparent;
+    padding: 0;
+    margin: 0;
+
+    cursor: pointer;
+}
+
+.numbers h2,
+.operators h2 {
+    padding: 16px;
+    color: rgb(250, 248, 252);
+    background: #2d2d44;
+    height: auto;
+    width: 100%;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    transition: transform 0.2s ease, background 0.2s ease;
+
+}
+
+.equal {
+    grid-column: 1 / -1;
+}
+
+.numbers:hover h2,
+.operators:hover h2 {
+    background: #6c5ce7;
+}
+
+.numbers:active,
+.operators:active {
+    transform: scale(0.95);
+}
+
+@media (max-width:768px) {
+    .calculator{
+        height: 90vh;
+        width:300px;
+        /* margin: 20px 0; */
+    }
+    .container{
+        height: fit-content;
+    }
+    .numbers h2, .operators h2{
+        padding: 6px;
+        box-sizing: border-box;
+    }
+}
