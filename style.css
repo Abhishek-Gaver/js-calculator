@@ -5,7 +5,7 @@
 
 .cover {
     background-color: cornflowerblue;
-    min-height: 100vh;
+    min-height: fit content;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,8 +118,7 @@
 @media (max-width:768px) {
     .calculator{
         height: fit-content;
-        width:300px;
-        /* margin: 20px 0; */
+        width: 300px;
     }
     .container{
         height: fit-content;
