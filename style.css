@@ -5,7 +5,7 @@
 
 .cover {
     background-color: cornflowerblue;
-    min-height: fit content;
+    min-height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
